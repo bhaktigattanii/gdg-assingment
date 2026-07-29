@@ -103,7 +103,7 @@ margin-left:0;
     justify-content: center;
     
 }
-.work,.features,.benefits,.reviews{
+.work,.features,.benefits,.reviews,.pricing{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -111,6 +111,8 @@ margin-left:0;
     align-items: center;
      font-family: "geist", sans-serif;
      padding: 80px 0;
+     color: #0C0C0C;
+     gap: 32px;
 }
 
 .content{
@@ -134,7 +136,7 @@ margin-left:0;
 .cards_content{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     justify-content: center;
     gap: 9px;
 
@@ -230,12 +232,14 @@ margin-left:0;
 
 
 .variant_img{
-    width: 308.6600036621094px;
+    width: 100%;
     height: 305px;
+    display: box;
+    object-fit: cover;
 }
 
 .features_heading{
-    white-space: nowrap;
+    
     font-weight: 500;
     font-size: 18px;
     line-height: 19.8px;
@@ -257,16 +261,224 @@ margin-left:0;
 /*benefits */
 
 .benefit_variant{
-    max-width: 309px;
-    max-height: 201px;
+    width: 32%;
+    max-height:200px ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 24px 24px;
     gap: 24px;
-    background-color: #141414;
+    background-color: #1a1a1a;
 }
-.variable_content{
-    max-width: 261px;
+.variant_content{
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    gap: 9px;
+}
+
+
+/*mistakes debugging
+1. both features and how vertex works section have minor differences in width and all.
+2. dont use fixed width or height for website to be more responsive . so fix that.
+3.variant content aur cards content me same styling hai
+*/
+
+
+.wrapper{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    
+}
+.frames{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color:#262626;
+    align-self: flex-start;
+}
+
+.benefit_img{
+    width: 16px;
+    height: 16px;
+    
+}
+
+
+.reviews_note{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.14px;
+    vertical-align: middle;
+    color: #fff;
+}
+.users{
+    display: flex;
+    gap: 9px;
+    
+    
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    gap: 5px;
+}
+
+.reviews_proffesion{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.4px;
+    letter-spacing: -0.12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #bababa;
+}
+
+.reviews_name{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.18px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+
+
+.photo img{
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    display: block;
+}
+
+.reviews_wrap{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    
+}
+
+/*PRICING*/
+
+.desktop_monthly{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    gap: 32px;
+}
+
+.plans{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 12px;
+}
+.plan{
+    width: 33%;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    gap: 18px;
+}
+
+
+.features_stack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.stack{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.stack p{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.14px;
+    vertical-align: middle;
+    
+}
+
+.price{
+   display: flex;
+   align-items: center;
+   
+   
+}
+
+.price img{
+    max-width: 48.55px;
+}
+
+.month{
+    color: #BABABA;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.42px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.strong{
+    align-self: flex-start;
+    color: #fff;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.number{
+    color: #fff;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -1.12px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.start{
+    white-space: nowrap;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.14px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.get_started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    padding: 10px 93px;
 }
