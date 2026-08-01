@@ -8,8 +8,6 @@
 
     font-family: "geist";
     src: url("./assets/fonts/geist.ttf");
-    
-
 }
 body{
     
@@ -103,7 +101,7 @@ margin-left:0;
     justify-content: center;
     
 }
-.work,.features,.benefits,.reviews,.pricing{
+.work,.features,.benefits,.reviews,.pricing ,.faq{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -475,10 +473,135 @@ margin-left:0;
     text-align: center;
 }
 
-.get_started{
+.get_started {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #262626;
     padding: 10px 93px;
+}
+
+.pro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular{
+    
+    border-radius: 91px;
+    background-color: #262626;
+    padding: 3px 10px;
+}
+
+.popular p{
+    
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.4px;
+    letter-spacing: -0.12px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    padding: 24px 24px;
+}
+
+.contact p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.14px;
+    vertical-align: middle;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    padding: 9px 16px;
+}
+
+.container p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.4px;
+    letter-spacing: -0.12px;
+    vertical-align: middle; 
+    text-align: center;
+}
+
+
+/* FAQs */
+
+.questions{
+
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.opened , .closed{
+    width: 100%;
+    background-color: #141414;
+    padding: 24px 24px;
+    
+}
+.question ,.answer{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+.question p{
+    align-self: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    vertical-align: middle; 
+    
+}
+.answer p{
+    color: #bababa;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.14px;
+    vertical-align: middle; 
+    
+}
+.cta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "geist", sans-serif;
+    padding: 80px 0;
+    color: #0C0C0C;
+    gap: 12px;
+
+}
+
+.cta_start{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 64px 48px;
 }
